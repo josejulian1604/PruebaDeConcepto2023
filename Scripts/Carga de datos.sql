@@ -1,5 +1,7 @@
 USE [Tarea1_2023]
 
+-- Script de carga de datos --
+-- 15 articulos iniciales
 INSERT dbo.Articulo(Nombre, Precio)
 VALUES  ('Martillo', 2000)
 ,		('Clavos', 900)
@@ -13,3 +15,6 @@ VALUES  ('Martillo', 2000)
 ,		('Taladro', 17000)
 ,		('Pala', 15000)
 ,		('Tuercas', 400)
+,		('Brocha', 1200)
+,		('Escuadra', 5700)
+,		('Sierra de Podar', 20000)
