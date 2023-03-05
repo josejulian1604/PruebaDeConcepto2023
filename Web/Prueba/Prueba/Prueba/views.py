@@ -64,7 +64,7 @@ def insert():
         result = cursor.fetchone()
         conn.commit()
         cursor.close()
-        print(type(result[0]))
+        print(result[0])
         if result[0] == 50001:
             message = "Articulo ya existe"
         else:
