@@ -64,12 +64,17 @@ def insert():
         result = cursor.fetchone()
         conn.commit()
         cursor.close()
-        print(result[0])
+        print(type(result[0]))
+        if result[0] == 50001:
+            message = "Articulo ya existe"
+        else:
+            message = ""
         return render_template(
             'insert.html', 
             title="Insertar Articulo", 
             nombreArticulo=nombreArticulo, 
-            precioArticulo=precioArticulo
+            precioArticulo=precioArticulo,
+            message=message
             )
     else:
         return render_template(
