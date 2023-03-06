@@ -67,6 +67,8 @@ def insert():
         print(result[0])
         if result[0] == 50001:
             message = "Articulo ya existe"
+        elif result[0] == 50002:
+            message = "Error: el nombre no esta formado correctamente"
         else:
             message = ""
         return render_template(
